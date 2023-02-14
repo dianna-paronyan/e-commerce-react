@@ -1,0 +1,63 @@
+.logo {
+  width: 120px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(120, 132, 132);
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 810px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(28, 30, 30, 0.5);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+input[type="checkbox"]:checked ~ .menu {
+  display: block;
+}
