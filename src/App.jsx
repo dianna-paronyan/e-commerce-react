@@ -1,10 +1,10 @@
-
+import MyRoutes from "./Routes/Routes"
 
 function App() {
 
   return (
     <div className="">
-      <h1>E-commerce</h1>
+      <MyRoutes />
     </div>
   )
 }
