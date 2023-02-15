@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
         <Header />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }
