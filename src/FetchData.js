@@ -25,14 +25,14 @@ const productData = [
       id: 4,
       image: '/images/img3.webp',
       name: 'JOUR 8',
-      description: '',
+      description: 'Neutral - Leather',
       price: '50000AMD',
     },
     {
       id: 5,
       image: './images/img4.webp',
       name: 'JOUR 5',
-      description: '',
+      description: 'For Her -Floral Woody',
       price: '50000AMD',
     },
     {
@@ -53,14 +53,14 @@ const productData = [
       id: 8,
       image: '/images/img7.webp',
       name: 'SILKY SANDALWOOD',
-      description: '',
+      description: 'Neutral - Woody Spicy',
       price: '50000AMD',
     },
     {
       id: 9,
       image: '/images/img8.webp',
       name: 'WHITE ROSE',
-      description: '',
+      description: 'For Her -Floral Musky',
       price: '50000AMD',
     }
 ]
