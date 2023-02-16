@@ -14,6 +14,8 @@ function Home() {
   },[])
 
   return (
+    <>
+    <h2>OUR BEST SELLERS</h2>
     <div className="container">
       {productsData.map((el)=>{
         return(
@@ -23,7 +25,7 @@ function Home() {
               <div className="text_box">
                 <h4>{el.name}</h4>
                 <p>{el.description}</p>
-                <button className="btn">Add</button>
+                <button className="btn">Add to cart</button>
               </div>
             </div>
             </Link> 
@@ -31,6 +33,8 @@ function Home() {
         )
       })}
     </div>
+    </>
+    
   )
 }
 
