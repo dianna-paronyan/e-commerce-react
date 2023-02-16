@@ -8,13 +8,6 @@ const productData = [
         price: '50000AMD',
     },
     {
-      id: 2,
-      image: '/images/img1.webp',
-      name: 'CRAZY IN LOVE',
-      description: 'For Her - Floral Fruity',
-      price: '50000AMD',
-    },
-    {
       id: 3,
       image: '/images/img2.webp',
       name: 'GOLD NOIR',
