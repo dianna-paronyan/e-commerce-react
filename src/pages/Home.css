@@ -1,7 +1,7 @@
 .container {
+    width: 1200px;
     display: flex;
     justify-content: center;
-    /* flex: 80%; */
     flex-wrap: wrap;
     gap: 30px;
     background-color: white;
