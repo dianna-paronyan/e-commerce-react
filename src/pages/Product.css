@@ -1,0 +1,19 @@
+.product_box{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image{
+    width: 300px;
+}
+
+.text_box h4{
+    margin: 5px;
+   
+}
+.text_box p{
+    margin: 5px;
+}

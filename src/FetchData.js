@@ -69,3 +69,5 @@ const productData = [
 export async function getProducts(){
     return productData;
 }
+
+

@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getProducts } from "../FetchData";
+import './Product.css'
 
 function Product() {
 
@@ -19,8 +20,13 @@ function Product() {
     <div>
         {
             productData ? (
-                <div>
-                    <img src={productData.image} />
+                <div className="product_box">
+                    <img src={productData.image} className='image' />
+                    <div className="text_box">
+                      <h4>{productData.name}</h4>
+                      <p>{productData.description}</p>
+                      <p>{productData.price}</p>
+                    </div>
                 </div>
             ):
             <div></div>
