@@ -1,4 +1,5 @@
 import MyRoutes from "./Routes/Routes"
+import './App.css'
 
 function App() {
 

@@ -5,7 +5,7 @@ function Header() {
   return (
     <nav className="navbar">
     <div className="logo">
-      <a href="./index.html"><img className="logo" src="" alt="" /></a>
+      <a href=""><img className="logo" src="/images/logo.webp" alt="" /></a>
     </div>
 
     <ul className="nav-links">
@@ -17,6 +17,16 @@ function Header() {
         <li><Link to='/products'>Products</Link></li>
         <li><Link>About</Link></li>
         <li><a href="#">Contact</a></li>
+        <li>
+            <a>
+              <img
+                src="./images/shopping-cart.png"
+                alt=""
+                className="cart"
+                id="myBtn"
+              />
+            </a>
+          </li>
       </div>
     </ul>
   </nav>
