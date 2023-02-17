@@ -1,5 +1,6 @@
 import { useEffect,useState } from "react"
 import { Link } from "react-router-dom"
+import  Carousel from "../components/Carousel"
 import { getProducts } from "../FetchData"
 import './Home.css'
 
@@ -15,6 +16,7 @@ function Home() {
 
   return (
     <>
+    <Carousel />
     <h2>OUR BEST SELLERS</h2>
     <div className="container">
       {productsData.map((el)=>{
