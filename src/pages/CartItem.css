@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+
+.cart_box{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards_of_cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cards_of_cart img{
+    width: 150px;
+}
