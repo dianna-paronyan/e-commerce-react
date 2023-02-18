@@ -1,35 +1,52 @@
 import { Link } from "react-router-dom";
-import './Header.css'
+import { useCartItems } from "../Provider/CartProvider";
+import "./Header.css";
 
 function Header() {
+
+  const {cart} = useCartItems();
+
   return (
     <nav className="navbar">
-    <div className="logo">
-      <a href=""><img className="logo" src="/images/logo.webp" alt="" /></a>
-    </div>
-
-    <ul className="nav-links">
-      <input type="checkbox" id="checkbox_toggle" />
-      <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
-
-      <div className="menu">
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/products'>Products</Link></li>
-        <li><Link>About</Link></li>
-        <li><a href="#">Contact</a></li>
-        <li>
-            <a>
-              <img
-                src="./images/shopping-cart.png"
-                alt=""
-                className="cart"
-                id="myBtn"
-              />
-            </a>
-          </li>
+      <div className="logo">
+        <a href="">
+          <img className="logo" src="/images/logo.webp" alt="" />
+        </a>
       </div>
-    </ul>
-  </nav>
+
+      <ul className="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label htmlFor="checkbox_toggle" className="hamburger">
+          &#9776;
+        </label>
+
+        <div className="menu">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/products">Products</Link>
+          </li>
+          <li>
+            <Link>About</Link>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <Link to="/cartItems">
+            <li>
+                <img
+                  src="./images/shopping-cart.png"
+                  alt=""
+                  className="cart"
+                  id="myBtn"
+                />
+                <span>{cart.length}</span>
+            </li>
+          </Link>
+        </div>
+      </ul>
+    </nav>
   );
 }
 
