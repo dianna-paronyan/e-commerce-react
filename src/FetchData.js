@@ -5,14 +5,14 @@ const productData = [
         image: '/images/img.webp',
         name: '1982',
         description: 'Neutral - Woody Citrus',
-        price: '50000AMD',
+        price: '28000AMD',
     },
     {
       id: 2,
       image: '/images/img2.webp',
       name: 'GOLD NOIR',
       description: 'Neutral - Oriental',
-      price:'50000AMD'
+      price:'29000AMD'
     },
     {
       id: 3,
@@ -33,28 +33,28 @@ const productData = [
       image: '/images/img5.webp',
       name: 'ONE OF A KIND',
       description: 'For Him - Woody Aromatic',
-      price: '50000AMD',
+      price: '29000AMD',
     },
     {
       id: 6,
       image: '/images/img6.webp',
       name: 'ORIENTAL SOUL',
       description: 'Neutral - Oriental',
-      price: '50000AMD',
+      price: '29000AMD',
     },
     {
       id: 7,
       image: '/images/img7.webp',
       name: 'SILKY SANDALWOOD',
       description: 'Neutral - Woody Spicy',
-      price: '50000AMD',
+      price: '37000AMD',
     },
     {
       id: 8,
       image: '/images/img8.webp',
       name: 'WHITE ROSE',
       description: 'For Her -Floral Musky',
-      price: '50000AMD',
+      price: '37000AMD',
     }
 ]
 
