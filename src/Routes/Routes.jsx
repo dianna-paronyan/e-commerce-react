@@ -12,7 +12,6 @@ function MyRoutes() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
             <Route path="/:id" element={<Product />} />
             <Route path="/cartItems" element={<CardItem />} />
           </Route>
