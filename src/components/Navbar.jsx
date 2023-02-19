@@ -3,10 +3,10 @@ import Header from "./Header"
 
 function Navbar() {
   return (
-    <div>
+    <>
         <Header />
         {/* <Footer /> */}
-    </div>
+    </>
   )
 }
 

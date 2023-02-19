@@ -1,3 +1,6 @@
+.prod_box{
+    min-height: calc(100vh - 190px);
+}
 .product_box{
     margin-top: 50px;
     display: flex;

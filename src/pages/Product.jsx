@@ -17,7 +17,7 @@ function Product() {
     },[id,productData])
 
   return (
-    <div>
+    <div className="prod_box">
         {
             productData ? (
                 <div className="product_box">

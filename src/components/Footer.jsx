@@ -5,6 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import './Footer.css'
 function Footer() {
   return (
+    <div className='footer_box'> 
     <footer>
     <div className="media">
       <a href="https://www.facebook.com/"><i><FacebookIcon sx={{fontSize:'30px'}}/></i></a>
@@ -14,6 +15,7 @@ function Footer() {
     </div>
     <p>&copy; All rights reserved <span className="date"></span></p>
   </footer>
+    </div>
   )
 }
 

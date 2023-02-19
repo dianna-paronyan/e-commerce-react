@@ -1,12 +1,19 @@
+
+.content{
+    min-height: calc(100vh - 190px);
+    margin: auto;
+}
 h1{
     text-align: center;
 }
 
 .cart_box{
+    width: 600px;
     margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 

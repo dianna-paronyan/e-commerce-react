@@ -9,7 +9,7 @@ function CardItem() {
   }
 
   return (
-    <>
+    <div className="content">
       <h1>Cart Items</h1>
       <div className="cart_box">
         {cart?.map((el) => {
@@ -23,7 +23,7 @@ function CardItem() {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 

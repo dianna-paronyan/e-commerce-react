@@ -24,7 +24,7 @@ function Home() {
       {productsData.map((el)=>{
         return(
           <div key={el.id} className=''>
-           {/* <Link to={`/${el.id}`}> */}
+           <Link to={`/${el.id}`}>
             <div className="card" >
               <img src={el.image} alt="" className="images" />
               <div className="text_box">
@@ -33,7 +33,7 @@ function Home() {
                 <button className="btn" onClick={()=>addToCart(el)}>Add to cart</button>
               </div>
             </div>
-            {/* </Link>  */}
+            </Link> 
           </div>
         )
       })}

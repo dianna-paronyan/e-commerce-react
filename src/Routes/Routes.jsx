@@ -8,7 +8,6 @@ import CardItem from "../pages/CardItem";
 
 function MyRoutes() {
   return (
-    <div>
       <CartProvider>
         <Routes>
           <Route element={<Layout />}>
@@ -19,7 +18,6 @@ function MyRoutes() {
           </Route>
         </Routes>
       </CartProvider>
-    </div>
   );
 }
 
