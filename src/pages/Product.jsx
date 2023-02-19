@@ -5,13 +5,12 @@ import './Product.css'
 
 function Product() {
 
-    const [productData, setProductData] = useState([]);
+    const [productData, setProductData] = useState({});
     const {id} = useParams();
 
     useEffect(()=>{
       getProducts().then((res)=>{
-        console.log(res,'pr');
-        setProductData(res[id-1]);
+        setProductData(res[id]);
         console.log(productData)
       })
     },[id,productData])

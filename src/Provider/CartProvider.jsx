@@ -12,6 +12,11 @@ export default function CartProvider({children}){
     console.log(cart)
     function addToCart(product){
         setCart([...cart, product]);
+        // if(cart.some(pr=> pr.id)){
+        //     return {}
+        // }else{
+        //     setCart([...cart, product]);
+        // }
     }
 
     return(
