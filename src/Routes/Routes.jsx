@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import Layout from "../components/Layout";
 import Product from "../pages/Product";
 import CartProvider from "../Provider/CartProvider";
-import CardItem from "../pages/CardItem";
+import CartItems from "../pages/CartItems";
 
 function MyRoutes() {
   return (
@@ -12,7 +12,7 @@ function MyRoutes() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/:id" element={<Product />} />
-            <Route path="/cartItems" element={<CardItem />} />
+            <Route path="/cartItems" element={<CartItems />} />
           </Route>
         </Routes>
       </CartProvider>

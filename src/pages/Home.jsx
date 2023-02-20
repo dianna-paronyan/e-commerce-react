@@ -24,16 +24,16 @@ function Home() {
       {productsData.map((el)=>{
         return(
           <div key={el.id} className=''>
-           <Link to={`/${el.id-1}`}>
+           {/* <Link to={`/${el.id-1}`}> */}
             <div className="card" >
               <img src={el.image} alt="" className="images" />
               <div className="text_box">
                 <h4>{el.name}</h4>
                 <p>{el.description}</p>
-                <button className="btn" onClick={()=>addToCart(el)}>Add to cart</button>
+                <button className="btn" onClick={()=>addToCart(el,el.id)}>Add to cart</button>
               </div>
             </div>
-            </Link> 
+            {/* </Link>  */}
           </div>
         )
       })}

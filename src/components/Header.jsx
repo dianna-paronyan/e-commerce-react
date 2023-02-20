@@ -38,7 +38,7 @@ function Header() {
                   className="cart"
                   id="myBtn"
                 />
-                <span className={cart.length>0 ? 'count' : ''}>{cart.length>0 && cart.length}</span>
+                <span className={cart?.length>0 ? 'count' : ''}>{cart.length>0 && cart.length}</span>
             </li>
           </Link>
         </div>

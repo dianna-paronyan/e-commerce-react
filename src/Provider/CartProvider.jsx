@@ -10,10 +10,10 @@ export default function CartProvider({children}){
     },[cart])
 
     console.log(cart)
-    function addToCart(product){
+    function addToCart(product,id){
  
-        if(!cart.includes(product)){
-            setCart([...cart, product]);
+        if(!cart.includes(product,id)){
+            setCart([...cart,product]);
         }
     }
 

@@ -1,7 +1,8 @@
+import Counter from "../components/Counter";
 import { useCartItems } from "../Provider/CartProvider";
 import "./CartItem.css";
 
-function CardItem() {
+function CartItems() {
   const { cart, setCart } = useCartItems();
 
   function removeCartItem(id) {
@@ -19,6 +20,8 @@ function CardItem() {
               <h4>{el.name}</h4>
               <p>{el.price}</p>
               <button onClick={() => removeCartItem(el.id)}>Delete</button>
+              <Counter num={el.quantity} id={el.id} setCart={setCart} cart={cart} removeCartItem={removeCartItem} /> 
+              
             </div>
           );
         })}
@@ -27,4 +30,4 @@ function CardItem() {
   );
 }
 
-export default CardItem;
+export default CartItems;
