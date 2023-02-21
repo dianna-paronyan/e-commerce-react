@@ -26,7 +26,7 @@ function Home() {
           <div key={el.id} className=''>
            {/* <Link to={`/${el.id-1}`}> */}
             <div className="card" >
-              <img src={el.image} alt="" className="images" />
+            <Link to={`/${el.id-1}`}><img src={el.image} alt="" className="images" /></Link>
               <div className="text_box">
                 <h4>{el.name}</h4>
                 <p>{el.description}</p>

@@ -22,9 +22,9 @@ function Counter({num,setCart,cart,id,removeCartItem}) {
       }
   return (
     <div>
-      <button onClick={() => counter1("dec")}>-</button>
-      <span>{num}</span>
-      <button onClick={() => counter1("inc")}>+</button>
+      <button onClick={() => counter1("dec")} style={{width:'20px',height:'20px',cursor:'pointer'}}>-</button>
+      <span style={{margin:'4px'}}>{num}</span>
+      <button onClick={() => counter1("inc")} style={{width:'20px',height:'20px',cursor:'pointer'}}>+</button>
     </div>
   );
 }

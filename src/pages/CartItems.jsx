@@ -19,7 +19,7 @@ function CartItems() {
               <img src={el.image} alt="" />
               <h4>{el.name}</h4>
               <p>{el.price}</p>
-              <button onClick={() => removeCartItem(el.id)}>Delete</button>
+              <button onClick={() => removeCartItem(el.id)} className='del_btn'>Delete</button>
               <Counter num={el.quantity} id={el.id} setCart={setCart} cart={cart} removeCartItem={removeCartItem} /> 
               
             </div>

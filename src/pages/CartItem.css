@@ -29,3 +29,14 @@ h1{
 .cards_of_cart img{
     width: 150px;
 }
+
+.del_btn{
+    width: 70px;
+    height: 30px;
+    background-color: rgba(18, 18, 18,0.7);
+    border: none;
+    cursor: pointer;
+}
+.del_btn:hover{
+    background-color: rgba(39, 39, 39, 0.7);
+}
