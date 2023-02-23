@@ -40,19 +40,27 @@ th {
   margin-top: 20px;
   box-shadow: rgba(207, 207, 208, 0.2) 0px 2px 2px;
 }
+.row img {
+  width: 70px;
+  height: 67px;
+}
 .desc {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
+.desc .text_btn_box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 5px;
+}
 .desc p {
   width: 170px;
 }
-.row img {
-  width: 70px;
-  height: 67px;
-}
+
 
 .delete_icon {
   display: flex;

@@ -28,7 +28,7 @@ function Home() {
                   <img src={el.image} alt="" className="images" />
                   <div className="text_box">
                     <h4>{el.name}</h4>
-                    <p>{el.price}AMD</p>
+                    <p>{el.price} AMD</p>
                     <p>{el.description}</p>
                     <button
                       className="btn"

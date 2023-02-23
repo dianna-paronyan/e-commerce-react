@@ -28,8 +28,8 @@ function CartItems() {
                 <tr className="row" key={el.id}>
                   <td className="desc">
                     <img src={el.image} alt="" />
-                    <div>
-                      <h4>{el.name}</h4>
+                    <div className="text_btn_box">
+                      <h5>{el.name}</h5>
                       <p>{el.description}</p>
                       <p
                         className="delete_icon"
@@ -51,7 +51,7 @@ function CartItems() {
                       removeCartItem={removeCartItem}
                     />
                   </td>
-                  <td>{el.price}AMD</td>
+                  <td>{el.price} AMD</td>
                 </tr>
               );
             })}
