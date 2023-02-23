@@ -8,16 +8,16 @@ import About from "../pages/About";
 
 function MyRoutes() {
   return (
-      <CartProvider>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/:id" element={<Product />} />
-            <Route path="/cartItems" element={<CartItems />} />
-            <Route path="/about" element={<About />} />
-          </Route>
-        </Routes>
-      </CartProvider>
+    <CartProvider>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/:id" element={<Product />} />
+          <Route path="/cartItems" element={<CartItems />} />
+          <Route path="/about" element={<About />} />
+        </Route>
+      </Routes>
+    </CartProvider>
   );
 }
 

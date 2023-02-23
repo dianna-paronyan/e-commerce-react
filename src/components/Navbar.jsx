@@ -1,13 +1,11 @@
-import Footer from "./Footer"
-import Header from "./Header"
+import Header from "./Header";
 
 function Navbar() {
   return (
     <>
-        <Header />
-        {/* <Footer /> */}
+      <Header />
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -3,8 +3,7 @@ import { useCartItems } from "../Provider/CartProvider";
 import "./Header.css";
 
 function Header() {
-
-  const {cart} = useCartItems();
+  const { cart } = useCartItems();
 
   return (
     <nav className="navbar">
@@ -25,20 +24,22 @@ function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to='/about'>About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <a href="#">Contact</a>
           </li>
           <Link to="/cartItems">
             <li>
-                <img
-                  src="./images/shopping-cart.png"
-                  alt=""
-                  className="cart"
-                  id="myBtn"
-                />
-                <span className={cart?.length>0 ? 'count' : ''}>{cart.length>0 && cart.length}</span>
+              <img
+                src="./images/shopping-cart.png"
+                alt=""
+                className="cart"
+                id="myBtn"
+              />
+              <span className={cart?.length > 0 ? "count" : ""}>
+                {cart.length > 0 && cart.length}
+              </span>
             </li>
           </Link>
         </div>

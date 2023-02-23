@@ -1,10 +1,10 @@
-import './About.css'
+import "./About.css";
 
 function About() {
   return (
     <div className="main_box">
-      <h1 className='title'> ROOTS MADE MODERN</h1>
-      <p className='txt'>
+      <h1 className="title"> ROOTS MADE MODERN</h1>
+      <p className="txt">
         MAJOURI was created in Paris in 2017 by Hadi Masmoum. Native of the
         Orient and bathed since his childhood in the world of perfumery, he
         launched MAJOURI to make heritage modern. Hadi Masmoum has a passion for

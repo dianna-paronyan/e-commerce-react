@@ -66,12 +66,11 @@ input[type="checkbox"]:checked ~ .menu {
   display: block;
 }
 
-
-.cart{
+.cart {
   width: 30px;
 }
 
-.count{
+.count {
   display: flex;
   justify-content: center;
   align-items: center;

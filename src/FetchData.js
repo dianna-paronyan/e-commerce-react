@@ -5,7 +5,7 @@ const productData = [
         image: '/images/img.webp',
         name: '1982',
         description: 'Neutral - Woody Citrus',
-        price: '28000AMD',
+        price: 28000,
         quantity:1
     },
     {
@@ -13,7 +13,7 @@ const productData = [
       image: '/images/img2.webp',
       name: 'GOLD NOIR',
       description: 'Neutral - Oriental',
-      price:'29000AMD',
+      price:29000,
       quantity:1
     },
     {
@@ -21,7 +21,7 @@ const productData = [
       image: '/images/img3.webp',
       name: 'JOUR 8',
       description: 'Neutral - Leather',
-      price: '50000AMD',
+      price: 50000,
       quantity:1
     },
     {
@@ -29,7 +29,7 @@ const productData = [
       image: './images/img4.webp',
       name: 'JOUR 5',
       description: 'For Her -Floral Woody',
-      price: '50000AMD',
+      price: 50000,
       quantity:1
     },
     {
@@ -37,7 +37,7 @@ const productData = [
       image: '/images/img5.webp',
       name: 'ONE OF A KIND',
       description: 'For Him - Woody Aromatic',
-      price: '29000AMD',
+      price: 29000,
       quantity:1
     },
     {
@@ -45,7 +45,7 @@ const productData = [
       image: '/images/img6.webp',
       name: 'ORIENTAL SOUL',
       description: 'Neutral - Oriental',
-      price: '29000AMD',
+      price: 29000,
       quantity:1
     },
     {
@@ -53,7 +53,7 @@ const productData = [
       image: '/images/img7.webp',
       name: 'SILKY SANDALWOOD',
       description: 'Neutral - Woody Spicy',
-      price: '37000AMD',
+      price: 37000,
       quantity:1
     },
     {
@@ -61,7 +61,7 @@ const productData = [
       image: '/images/img8.webp',
       name: 'WHITE ROSE',
       description: 'For Her -Floral Musky',
-      price: '37000AMD',
+      price: 37000,
       quantity:1
     }
 ]
