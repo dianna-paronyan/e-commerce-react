@@ -8,6 +8,7 @@ function CartItems() {
   function removeCartItem(id) {
     setCart(cart.filter((el) => el.id !== id));
   }
+  console.log(cart)
 
   return (
     <div className="content">
