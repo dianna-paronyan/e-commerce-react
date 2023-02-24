@@ -14,17 +14,14 @@ export default function CartProvider({ children }) {
   function addToCart(product, id) {
     const existItem = cart.find((pr) => pr.id === id);
     const someEl = cart.some((pr) => pr.id === id);
-    console.log(someEl, "some");
-    console.log(product, "product");
+
     if (!someEl) {
       setCart([...cart, product]);
-      console.log(cart, "if");
     } else {
       const newItem = cart.map((el) =>
         el.id === id ? { ...existItem, quantity: existItem.quantity + 1 } : el
       );
       setCart(newItem);
-      console.log(cart, "else");
     }
   }
 
