@@ -58,9 +58,9 @@ function CartItems() {
                     })}
                   </tbody>
                 </table>
-        ) : <></>}
+        ) : <div className="text">You don't have buyed product</div>}
 
-        <h3 className="amount">
+       <h3 className="amount">
           Estimated Total is  {cart.reduce((acc, el) => acc + el.price * el.quantity, 0)} AMD
         </h3>
       </div>
