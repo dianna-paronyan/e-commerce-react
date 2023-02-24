@@ -7,7 +7,7 @@ const images = [
   "/images/GENESIS_COVER.webp",
   "/images/JOUR_COVER.webp",
 ];
-const delay = 5000;
+const delay = 4000;
 
 function Carousel() {
   const [index, setIndex] = useState(0);
