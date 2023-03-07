@@ -2,12 +2,21 @@ import Counter from "../components/Counter";
 import { useCartItems } from "../Provider/CartProvider";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "./CartItem.css";
+import { useEffect } from "react";
 
 function CartItems() {
   const { cart, setCart } = useCartItems();
 
-  function removeCartItem(id) {
-    setCart(cart.filter((el) => el.id !== id));
+  useEffect(()=>{
+    fetch('http://localhost:3002/shoppingCart/cartProducts').then((res)=>res.json()).then((res)=>{
+      setCart(res);
+    })
+  },[])
+
+  function removeCartItem(id){
+    fetch(`http://localhost:3002/delCartItem/${id}`,{method:'delete'}).then((res)=>res.json()).then((res)=>{
+      setCart(cart.filter((el) => el.id !== id));
+    })
   }
 
   return (
@@ -50,6 +59,7 @@ function CartItems() {
                               setCart={setCart}
                               cart={cart}
                               removeCartItem={removeCartItem}
+                              el={el}
                             />
                           </td>
                           <td>{el.price} AMD</td>
@@ -61,7 +71,7 @@ function CartItems() {
         ) : <div className="text">You don't have buyed product</div>}
 
        <h3 className="amount">
-          Estimated Total is  {cart.reduce((acc, el) => acc + el.price * el.quantity, 0)} AMD
+          Estimated Total is  {cart?.reduce((acc, el) => acc + el.price * el.quantity, 0)} AMD
         </h3>
       </div>
     </div>

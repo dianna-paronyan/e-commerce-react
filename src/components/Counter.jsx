@@ -1,6 +1,4 @@
-
-function Counter({ num, setCart, cart, id, removeCartItem }) {
-
+function Counter({ num, setCart, cart, id, removeCartItem, el }) {
   function quantity(type) {
     const existItem = cart.find((pr) => pr.id === id);
     if (type === "inc") {
@@ -22,6 +20,22 @@ function Counter({ num, setCart, cart, id, removeCartItem }) {
         setCart(newItem);
       }
     }
+
+    fetch(`http://localhost:3002/cart/${id}`, {
+      method: "put",
+      body: JSON.stringify({
+        product_id: id,
+        image: el.image,
+        name: el.name,
+        price: el.price,
+        description: el.description,
+        quantity:
+          type === "inc" ? existItem.quantity + 1 : existItem.quantity - 1,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    });
   }
   return (
     <div>

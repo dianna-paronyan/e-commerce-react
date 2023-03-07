@@ -29,7 +29,7 @@ function Header() {
           <li>
             <a href="#">Contact</a>
           </li>
-          <Link to="/cartItems">
+          <Link to="/shoppingCart/cartProducts">
             <li>
               <img
                 src="./images/shopping-cart.png"
